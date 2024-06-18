@@ -1,0 +1,101 @@
+*
+{
+    box-sizing: border-box;
+}
+
+body
+{
+   background-color:#9683FA;
+   height: 100%;
+  
+}
+.container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login-Container
+{
+    width: 100vh;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+.Login-Heading
+{
+    width: 40vh;
+    text-align: center;
+    color: #ffffff;
+}
+.btns1
+{
+margin: 1%;
+}
+.btn
+{
+    position: relative;
+    color: #FFFF;
+    background-color: transparent;
+    height: 2rem;
+    width: 6rem;
+    border: none;
+}
+.btn::after
+{
+    position:absolute;
+    content: "";
+    height: 0.130rem;
+    width: 4rem;
+    background-color:#D0D3D4;
+    left: 15%;
+    bottom: 0%;
+    transition: all 0.3s ease-in
+
+}
+.btn:hover::after
+{
+    transform: scale(0);
+    
+}
+#form
+{
+    width: 50vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+}
+.input
+{
+    background-color: rgba(255, 255,255,0.2);
+    height: 2.5rem;
+    width: 25rem;
+    border: none;
+    color: #FFFF;
+    padding-left: 5%;
+}
+.input::placeholder
+{
+    color: #D0D3D4;
+}
+#form :nth-child(3)
+{
+    background-color:  #27AE60;
+    border: none;
+    color: #ffffff;
+    height: 1.5rem;
+    width: 6rem
+}
+#form :nth-child(4)
+{
+    background-color:transparent;
+    border: none;
+    color: #ffffff;
+  
+}
+
+
